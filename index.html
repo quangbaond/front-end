@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div id="side-bar">
+        <div class="item-sidebar" data-content="top" >
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="item-sidebar-icon" onclick="showContentSideBar('top', this)">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="/top">取　　引</a>
+        </div>
+        <div class="item-sidebar" data-content="platform">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="item-sidebar-icon" onclick="showContentSideBar('platform', this)">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="/platform">プラットフォーム</a>
+        </div>
+        <div class="item-sidebar" data-content="partner">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="item-sidebar-icon" onclick="showContentSideBar('partner', this)">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="/partner">パートナー</a>
+        </div>
+        <div class="item-sidebar" data-content="about">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="item-sidebar-icon" onclick="showContentSideBar('about', this)">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="/about">EXP→fxについて</a>
+        </div>
+        <div class="item-sidebar" data-content="faq">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="item-sidebar-icon" onclick="showContentSideBar('faq')">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="/faq">F　A　Q</a>
+        </div>
+    </div>
+    <div id="side-bar-block">
+        <div data-content="top">
+            <div class="item-side-bar-block">
+                <div class="item-side-bar-block_title">
+                    <p>取引商品</p>
+                </div>
+                <div>
+                    <p>FX</p>
+                    <p>貴金属</p>
+                    <p>株式取引指数</p>
+                </div>
+            </div>
+            <div class="item-side-bar-block">
+                <div class="item-side-bar-block_title">
+                    <p>取引口座</p>
+                </div>
+                <div>
+                    <p><a href="/">お取引までの流れ</a></p>
+                    <p><a href="/">口座への入金方法</a></p>
+                    <p><a href="/">口座への出金方法</a></p>
+                </div>
+            </div>
+            <div class="item-side-bar-block">
+                <div class="item-side-bar-block_title">
+                    <p>取引条件</p>
+                </div>
+                <div>
+                    <p><a href="/">通貨ペア・スプレッド</a></p>
+                    <p><a href="/">執行方法</a></p>
+                    <p><a href="/">証拠金とレバッジ</a></p>
+                </div>
+            </div>
+        </div>
+        <div data-content="platform">
+            <div class="item-side-bar-block">
+                <div>
+                    <p>MT4</p>
+                </div>
+                <div>
+                    <p>PC対応MT4</p>
+                    <p>MacOS対応MT4</p>
+                    <p>iPhon対応MT4</p>
+                    <p>Android対応MT4</p>
+                    <p>MT4 WebTrader</p>
+                </div>
+            </div>
+        </div>
+        <div data-content="partner">
+            <div class="item-side-bar-block">
+                <div>
+                    <p>登録</p>
+                    <p>ログイン</p>
+                </div>
+                <div>
+                    <p><a href="/">POST登録 </a></p>
+                    <p><a href="/">POSTログイン</a></p>
+                    <p><a href="/">POST入出金ルール</a></p>
+                    <p><a href="/">友達紹介について</a></p>
+                </div>
+            </div>
+            <div class="item-side-bar-block">
+                <div>
+                    <p>ご案内</p>
+                </div>
+                <div>
+                    <p><a href="/">POSTとは</a></p>
+                    <p><a href="/">POST報酬について</a></p>
+                </div>
+            </div>
+        </div>
+        <div data-content="about">
+            <div class="item-side-bar-block about">
+                <div>
+                    <p><a href="/">NEXUSMANAGEMENTとは </a></p>
+                    <p><a href="/">企業理念</a></p>
+                    <p><a href="/">会社概要</a></p>
+                    <p><a href="/">利用規約</a></p>
+                    <p><a href="/">ガイドライン</a></p>
+                    <p><a href="/">お問い合わせ</a></p>
+                    <p><a href="/">アンチマネーロンダリング ポリシー</a></p>
+                    <p><a href="/">個人情報保護方針</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-side-bar">
+        <img src="bg.PNG" id="side-bar-img" alt="">
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+</html>
